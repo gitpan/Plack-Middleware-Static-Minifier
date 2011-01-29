@@ -1,0 +1,32 @@
+---
+abstract: 'serves static files and minify CSS and JavaScript'
+author:
+  - 'Dai Okabayashi <bayashi@cpan.org>'
+build_requires:
+  Cwd: 0
+  HTTP::Request::Common: 0
+  Plack::Builder: 0
+  Plack::Test: 0
+  Test::More: 0.88
+configure_requires:
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3607'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Plack-Middleware-Static-Minifier
+provides:
+  Plack::Middleware::Static::Minifier:
+    file: lib/Plack/Middleware/Static/Minifier.pm
+    version: 0.01
+requires:
+  CSS::Minifier::XS: 0
+  JavaScript::Minifier::XS: 0
+  Plack::Middleware::Static: 0
+  Plack::Util: 0
+  parent: 0
+resources:
+  license: http://dev.perl.org/licenses/
+  repository: git://github.com/bayashi/Plack-Middleware-Static-Minifier.git
+version: 0.01
