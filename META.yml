@@ -5,8 +5,6 @@ author:
 build_requires:
   Cwd: 0
   HTTP::Request::Common: 0
-  Plack::Builder: 0
-  Plack::Test: 0
   Test::More: 0.88
 configure_requires:
   Module::Build: 0.36
@@ -19,14 +17,13 @@ name: Plack-Middleware-Static-Minifier
 provides:
   Plack::Middleware::Static::Minifier:
     file: lib/Plack/Middleware/Static/Minifier.pm
-    version: 0.01
+    version: 0.02
 requires:
   CSS::Minifier::XS: 0
   JavaScript::Minifier::XS: 0
-  Plack::Middleware::Static: 0
-  Plack::Util: 0
+  Plack: 0.9958
   parent: 0
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/bayashi/Plack-Middleware-Static-Minifier.git
-version: 0.01
+version: 0.02
