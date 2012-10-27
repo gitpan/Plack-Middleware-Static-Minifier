@@ -17,13 +17,16 @@ name: Plack-Middleware-Static-Minifier
 provides:
   Plack::Middleware::Static::Minifier:
     file: lib/Plack/Middleware/Static/Minifier.pm
-    version: 0.06
+    version: 0.07
 requires:
   CSS::Minifier::XS: 0
+  Digest::MD5: 0
   JavaScript::Minifier::XS: 0
   Plack: 0.9958
+  Plack::Util::Accessor: 0
   parent: 0
+  perl: v5.8.7
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/bayashi/Plack-Middleware-Static-Minifier.git
-version: 0.06
+version: 0.07
