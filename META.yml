@@ -7,8 +7,9 @@ build_requires:
   HTTP::Request::Common: 0
   Test::More: 0.88
 configure_requires:
-  Module::Build: 0.36
-generated_by: 'Module::Build version 0.3607'
+  Module::Build: 0.40
+dynamic_config: 1
+generated_by: 'Module::Build version 0.4005, CPAN::Meta::Converter version 2.130880'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -17,9 +18,9 @@ name: Plack-Middleware-Static-Minifier
 provides:
   Plack::Middleware::Static::Minifier:
     file: lib/Plack/Middleware/Static/Minifier.pm
-    version: 0.071
+    version: 0.08
 requires:
-  CSS::Minifier::XS: 0
+  CSS::Minifier::XS: 0.09
   Digest::MD5: 0
   JavaScript::Minifier::XS: 0
   Plack: 0.9958
@@ -29,4 +30,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: git://github.com/bayashi/Plack-Middleware-Static-Minifier.git
-version: 0.071
+version: 0.08
